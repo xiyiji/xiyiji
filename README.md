@@ -1,6 +1,7 @@
 ## Mengyun Wang
 
 **AI Engineer — evaluation and ML systems**
+MS Computer Science, Northeastern University
 
 I work on the part of machine learning that decides whether a model is actually fit to
 ship: calibration, offline evaluation, and measuring what breaks when the data a model
