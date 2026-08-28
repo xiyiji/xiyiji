@@ -11,6 +11,8 @@ sees in production stops looking like the data it was trained on.
 
 ### [Cognitive Shorts](https://github.com/PSCRedefine) — four services, one engagement model
 
+[Single Prediction](https://github.com/PSCRedefine/SinglePrediction) · [Batch Prediction](https://github.com/PSCRedefine/BatchPrediction) · [Model Info](https://github.com/PSCRedefine/ModelInfo) · [Analytics Dashboard](https://github.com/PSCRedefine/AnalyticsDashboard)
+
 An engagement prediction system taken from notebook to something operable, as four
 deployable FastAPI services: a leakage-safe feature pipeline, cost-aware model selection
 under a paired-bootstrap tie test, an operating point chosen against a traffic budget
@@ -26,7 +28,7 @@ mapping every requirement to its implementation and evidence.
 
 `292 tests` · `CI on Python 3.11 / 3.12 / 3.13` · `MIT`
 
-### [KuaiRand Lab](https://github.com/PSCRedefine/kuairand-lab) — unbiased offline evaluation on real short-video logs
+### [GroundTruth](https://github.com/PSCRedefine/groundtruth) — unbiased offline evaluation on real short-video logs
 
 Kuaishou injected uniformly random videos into live recommendation feeds for two weeks.
 Training on algorithmic exposure and testing on **both** mechanisms across the identical
@@ -59,4 +61,4 @@ single feature reaches 0.7486.
 
 Each repository documents what is known to be wrong with it before it documents what works.
 
-📫 btzdnsn@gmail.com
+🌐 [xiyiji.github.io](https://xiyiji.github.io/) · 📫 btzdnsn@gmail.com
