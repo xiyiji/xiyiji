@@ -1,7 +1,7 @@
 ## Mengyun Wang
 
 **AI Engineer — evaluation and ML systems**
-MS Computer Science, Northeastern University
+Software Engineer at Meta
 
 I work on the part of machine learning that decides whether a model is actually fit to
 ship: calibration, offline evaluation, and measuring what breaks when the data a model
@@ -59,4 +59,4 @@ single feature reaches 0.7486.
 
 Each repository documents what is known to be wrong with it before it documents what works.
 
-📫 btzdnsn@gmail.com
+📫 mengyun_wang_ai@outlook.com
