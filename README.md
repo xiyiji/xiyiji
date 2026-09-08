@@ -1,6 +1,6 @@
 ## Hi, I'm Mengyun 👋
 
-I'm a Software Engineer at Meta, based in Seattle — working on **model evaluation**, **calibration**, and **ML systems that hold up under distribution shift**.
+I'm a Software Engineer at Meta, based in Bellevue, WA — working on **model evaluation**, **calibration**, and **ML systems that hold up under distribution shift**.
 
 I work on the part of machine learning that decides whether a model is actually fit to ship. Each repository documents what is known to be wrong with it before it documents what works.
 
