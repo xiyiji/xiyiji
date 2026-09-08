@@ -4,6 +4,8 @@ I'm an AI Engineer at Meta, based in Seattle — working on **model evaluation**
 
 I work on the part of machine learning that decides whether a model is actually fit to ship. Each repository documents what is known to be wrong with it before it documents what works.
 
+📍 Seattle  |  💼 [LinkedIn](https://www.linkedin.com/in/mengyunwang)  |  🌐 [xiyiji.github.io](https://xiyiji.github.io/)  |  📫 mengyun_wang_ai@outlook.com
+
 ---
 
 ### What I build
@@ -37,7 +39,7 @@ I work on the part of machine learning that decides whether a model is actually 
 `FastAPI` `Docker` `Kubernetes` `Prometheus` `Grafana` `pytest` `GitHub Actions`
 
 **Languages & web**
-`Python` `JavaScript` `HTML/CSS` `Vercel` `GitHub Pages`
+`Python` `JavaScript` `Java` `C++` `Go` `HTML/CSS` `Vercel` `GitHub Pages` 
 
 <!-- TODO: add the frameworks and infrastructure you use day to day that are not visible in your public repos (e.g. PyTorch, Spark, cloud platforms). Only what you actually use. -->
 
@@ -45,10 +47,9 @@ I work on the part of machine learning that decides whether a model is actually 
 
 ### Writing
 
-I write about what I actually build and measure — the negative results included.
-
-- 📝 [MCP is not dead — it is just not a personal-productivity tool](https://xiyiji.github.io/blogs/mcp-is-not-dead.html) — the CLI-versus-MCP argument is really an ownership question
-- 📚 [All posts](https://xiyiji.github.io/blogs/) — daily notes on AI engineering and evaluation
+I write about what I actually build.
+ 
+- 📚 [All posts](https://xiyiji.github.io/blogs/) — daily notes on AI engineering learning.
 
 ---
 
@@ -58,6 +59,3 @@ I write about what I actually build and measure — the negative results include
 - 📖 Writing: daily notes on AI engineering and evaluation
 <!-- TODO (optional): a "🔍 Open to: …" line if you want to signal roles you are interested in. Delete this comment if not. -->
 
----
-
-📍 Seattle  |  💼 [LinkedIn](https://www.linkedin.com/in/mengyunwang)  |  🌐 [xiyiji.github.io](https://xiyiji.github.io/)  |  📫 mengyun_wang_ai@outlook.com
