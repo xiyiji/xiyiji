@@ -35,8 +35,7 @@ I work on the part of machine learning that decides whether a model is actually 
 `PyTorch` `scikit-learn` `LightGBM` `Hugging Face` `pandas` `NumPy` `DuckDB` `Parquet`
 
 **LLM & agents**
-`vLLM` `Ray Serve` `ONNX Runtime` `Anthropic API` `OpenAI API` `MCP`
-`RAG` — BM25 · embeddings · RRF fusion · cross-encoder reranking
+`vLLM` `Ray Serve` `ONNX Runtime` `Anthropic API` `OpenAI API` `MCP` `RAG` `BM25` `embeddings` 
 
 **Evaluation**
 `offline evaluation` `LLM-as-judge` `regression gates` `paired bootstrap` `calibration` `IPS / SNIPS / doubly robust`
