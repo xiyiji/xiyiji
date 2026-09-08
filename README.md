@@ -29,17 +29,23 @@ I work on the part of machine learning that decides whether a model is actually 
 | [MLE Prep](https://mle-prep-pi.vercel.app/) ([source](https://github.com/xiyiji/mle-prep)) | A growing machine-learning-engineer interview question bank, updated daily: 360+ questions across ML coding, theory, LLMs & agents, ML systems, MLOps, recommender systems, AI safety, multimodal and behavioural, filterable by category and difficulty. Reference answers give an answer framework, key points, common follow-ups and further reading, and any question can be handed to Claude or ChatGPT for a walkthrough. In Chinese. | HTML · JavaScript · KaTeX · Vercel |
 
 ---
-
 ### Tech stack
 
-**ML & evaluation**
-`scikit-learn` `LightGBM` `pandas` `NumPy` `paired bootstrap` `calibration`
+**ML & data**
+`PyTorch` `scikit-learn` `LightGBM` `Hugging Face` `pandas` `NumPy` `DuckDB` `Parquet`
+
+**LLM & agents**
+`vLLM` `Ray Serve` `ONNX Runtime` `Anthropic API` `OpenAI API` `MCP`
+`RAG` — BM25 · embeddings · RRF fusion · cross-encoder reranking
+
+**Evaluation**
+`offline evaluation` `LLM-as-judge` `regression gates` `paired bootstrap` `calibration` `IPS / SNIPS / doubly robust`
 
 **Serving & operations**
-`FastAPI` `Docker` `Kubernetes` `Prometheus` `Grafana` `pytest` `GitHub Actions`
+`FastAPI` `Docker` `Kubernetes` `Terraform` `Prometheus` `Grafana` `pytest` `GitHub Actions`
 
 **Languages & web**
-`Python` `JavaScript` `Java` `C++` `Go` `HTML/CSS` `Vercel` `GitHub Pages` 
+`Python` `Java` `C++` `TypeScript` `Next.js` `Vercel` `GitHub Pages`
 
 <!-- TODO: add the frameworks and infrastructure you use day to day that are not visible in your public repos (e.g. PyTorch, Spark, cloud platforms). Only what you actually use. -->
 
