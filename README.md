@@ -1,8 +1,8 @@
 ## Hi, I'm Mengyun 👋
 
-I'm a Software Engineer at Meta, based in Bellevue, WA — working on **model evaluation**, **calibration**, and **ML systems that hold up under distribution shift**.
+I'm a Software Engineer at Meta, based in Seattle, WA — I build **infrastructure for large-scale AI systems and LLM agents**: distributed data systems, agent runtimes and harnesses, retrieval, sandboxed execution, and evaluation harnesses.
 
-I work on the part of machine learning that decides whether a model is actually fit to ship. Each repository documents what is known to be wrong with it before it documents what works.
+The through-line is reliability under real load: an agent is only useful once you can show what it did, prove the answer came from the authoritative source, and catch the run where it goes wrong.
 
 📍 Seattle  |  💼 [LinkedIn](https://www.linkedin.com/in/mengyunwang)  |  🌐 [xiyiji.github.io](https://xiyiji.github.io/)  |  📫 mengyun_wang_ai@outlook.com
 
@@ -10,6 +10,7 @@ I work on the part of machine learning that decides whether a model is actually 
 
 ### What I build
 
+- 🤖 **Production LLM agents on LangGraph** — an operations agent that diagnoses exceptions over live data, cites the playbook page it applied, and escalates to a human when it should: **10/10 tasks, 8/8 escalations, none raised unnecessarily** (Delivery Exception Agent)
 - 🔁 **Coding-agent harness** — typed tools, read-before-write gating, Docker sandbox, subagents, context compaction; **96% on a 25-exercise polyglot benchmark subset** (mini-harness)
 - 🧵 **Durable agent runtime** — an event journal that lets a run **resume after `kill -9` with exactly-once effects**, a context budget that shrinks, summarises and pins, hybrid retrieval with reranking, and a namespace + cgroup sandbox that **held against 13 escape attempts** (Loomwork)
 - 🧪 **Evaluation harnesses with regression gates** — recorded baselines re-scored in CI without an API key, deterministic scoring, LLM-as-judge reported but never gating; the harness is built first and the behaviour is changed against it (Loomwork · LLM Gateway · GroundTruth)
@@ -22,9 +23,9 @@ I work on the part of machine learning that decides whether a model is actually 
 
 ### Featured projects
 
-
 | Project | What it does | Stack |
 |---|---|---|
+| [Delivery Exception Agent](https://github.com/xiyiji/delivery-exception-agent) | A **LangGraph** multi-agent assistant for last-mile delivery operations: it reads shipment logs and a customer SQL database, retrieves the operations playbook with **page-level citations**, drafts the customer message, and decides whether a human has to approve it. **10 of 10 exceptions resolved end to end, 8 of 8 escalations correct with none raised unnecessarily, tool-call accuracy 10/10, answer coherence 5.0/5**, ~6 s per exception. Guardrails ahead of every side effect — an execution gate on status and send permission, PII redaction on traces and judge inputs — and a documented ground-truth-vs-playbook conflict rather than a quiet rewrite. `8 offline tests` · CI | Python · LangGraph · LangSmith · Chroma · SQLite · OpenAI API |
 | [mini-harness](https://github.com/xiyiji/mini-harness) | A coding-agent harness in ~1,800 lines of Python: **nine Pydantic-typed tools**, **read-before-write gating** on every edit, a **no-network Docker sandbox**, subagents, context compaction, request retries and a Textual TUI. **Solves 24 of 25 exercises (96%)** from Aider's polyglot benchmark with claude-haiku-4-5 — Python 12/12, Go 11/12 — scored by each exercise's own test suite. Per-task turn cap, resumable benchmark driver. `16 offline tests` · fake model server · CI on Python 3.12–3.13 | Python · Pydantic · OpenAI SDK · Docker · Textual · pytest |
 | [Loomwork](https://github.com/xiyiji/loomwork) | A durable agent runtime. An append-only SQLite journal lets a run **resume after `SIGKILL` with exactly-once side effects** — the test kills a real child process mid-run and counts twelve effects, not thirteen. Context compaction that shrinks, summarises and pins keeps a step-3 fact alive through a 40-step run on a 4k-token budget. Structure-aware chunking + BM25 + embeddings + RRF + cross-encoder rerank, judged on **67 real vLLM issue-tracker questions** against the maintainers' own answers: **R@5 0.51 vs 0.43** for keyword search. A bubblewrap + cgroup sandbox that **held against 13 escape attempts** (fork bomb, `/etc/shadow`, network, symlinks…). Two agents on it, 22 eval tasks, a **committed baseline re-scored in CI behind a regression gate**, no API key needed. MCP server over the tools; Next.js trace viewer. `104 tests` · CI | Python · SQLite · bubblewrap · cgroups · ONNX Runtime · FastMCP · Next.js |
 | [Atlas](https://github.com/xiyiji/atlas-llm-execution-agent) ([live demo](https://xiyiji.github.io/projects/atlas-demo.html)) | Five agents — Planner, Safety, Coder, Browser, Verifier — run by **one orchestrator that owns every state change** and never calls a model itself. Plans are scored twice, by the Safety agent and by fixed rules, and anything over the line **waits for a person before it runs**. Every event is in the database before it reaches the UI, so a task **survives a restart and can be replayed**. Code runs in a network-less container with dropped capabilities; fetches are validated hop by hop against SSRF. Runs end-to-end with no model keys. `46 tests` · ruff · pip-audit · CI | Python · FastAPI · Celery · PostgreSQL · SSE |
@@ -36,16 +37,15 @@ I work on the part of machine learning that decides whether a model is actually 
 
 How each of these was built, and what broke along the way: xiyiji.github.io/blogs.
 
-
 ---
 
 ### Tech stack
 
 **LLM & agents**
-`agent runtime` `agent harness` `tool calling` `MCP` `multi-agent orchestration` `context compaction` `event sourcing / replay` `sandboxed execution (bubblewrap · cgroups · Docker)` `RAG` `BM25` `embeddings` `RRF fusion` `cross-encoder reranking` `model routing` `Anthropic API` `OpenAI API` `vLLM` `Ray Serve` `ONNX Runtime`
+`LangGraph` `LangChain` `LangSmith` `agent runtime` `agent harness` `tool calling` `MCP` `multi-agent orchestration` `prompt engineering` `context compaction` `guardrails & execution gates` `event sourcing / replay` `sandboxed execution (bubblewrap · cgroups · Docker)` `RAG` `Chroma` `BM25` `embeddings` `RRF fusion` `cross-encoder reranking` `citation-grounded answers` `model routing` `Anthropic API` `OpenAI API` `vLLM` `Ray Serve` `ONNX Runtime`
 
 **Evaluation**
-`eval harnesses` `golden datasets` `regression gates` `replayable eval runs` `LLM-as-judge` `polyglot benchmark` `trajectory-level failure analysis` `offline evaluation` `off-policy evaluation (IPS / SNIPS / DR)` `paired bootstrap` `calibration`
+`eval harnesses` `golden datasets` `automated graders` `regression gates` `replayable eval runs` `LLM-as-judge` `polyglot benchmark` `trajectory-level failure analysis` `offline evaluation` `off-policy evaluation (IPS / SNIPS / DR)` `paired bootstrap` `calibration`
 
 **ML & data**
 `PyTorch` `Hugging Face` `scikit-learn` `LightGBM` `pandas` `NumPy` `DuckDB` `Parquet` `two-tower rankers` `PPO` `fine-tuning data curation`
@@ -58,7 +58,6 @@ How each of these was built, and what broke along the way: xiyiji.github.io/blog
 
 **Web**
 `TypeScript` `Next.js` `Textual` `Vercel` `GitHub Pages`
-
 
 ---
 
@@ -74,5 +73,3 @@ I write about what I actually build.
 
 - 🔨 Building: [MLE Prep](https://mle-prep-pi.vercel.app/) — new questions and reference answers added daily
 - 📖 Writing: daily notes on AI engineering and evaluation
-<!-- TODO (optional): a "🔍 Open to: …" line if you want to signal roles you are interested in. Delete this comment if not. -->
-
