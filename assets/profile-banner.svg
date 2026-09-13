@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+<title id="title">Mengyun Wang — AI systems and agent infrastructure</title>
+<desc id="desc">A navy and mint banner with a connected system diagram. Agent runtimes, LLM infrastructure, evaluation.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e35"/><stop offset="1" stop-color="#080e1c"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#54e0be" stop-opacity=".17"/><stop offset="1" stop-color="#54e0be" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#7294bf" stroke-opacity=".06"/></pattern>
+</defs>
+<rect width="1200" height="340" rx="20" fill="url(#bg)"/>
+<rect width="1200" height="340" rx="20" fill="url(#grid)"/>
+<ellipse cx="982" cy="158" rx="290" ry="235" fill="url(#glow)"/>
+<path d="M48 49h36" stroke="#66e3c4" stroke-width="3"/>
+<text x="99" y="55" fill="#9badc6" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">SOFTWARE ENGINEER · SEATTLE</text>
+<text x="48" y="130" fill="#f1f5fc" font-family="Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-2">Mengyun Wang</text>
+<text x="50" y="179" fill="#68e3c4" font-family="Arial, sans-serif" font-size="29" font-weight="500">AI systems. Built end to end.</text>
+<text x="50" y="219" fill="#a5b5ca" font-family="Arial, sans-serif" font-size="17">Agent runtimes / LLM infrastructure / Evaluation</text>
+<path d="M50 260H690" stroke="#2b3a50"/>
+<text x="50" y="293" fill="#8194af" font-family="monospace" font-size="13" letter-spacing="2">DESIGN</text>
+<text x="170" y="293" fill="#5ee0c0" font-family="monospace" font-size="17">→</text>
+<text x="210" y="293" fill="#8194af" font-family="monospace" font-size="13" letter-spacing="2">BUILD</text>
+<text x="330" y="293" fill="#5ee0c0" font-family="monospace" font-size="17">→</text>
+<text x="370" y="293" fill="#8194af" font-family="monospace" font-size="13" letter-spacing="2">EVALUATE</text>
+<text x="510" y="293" fill="#5ee0c0" font-family="monospace" font-size="17">→</text>
+<text x="550" y="293" fill="#8194af" font-family="monospace" font-size="13" letter-spacing="2">OPERATE</text>
+<g fill="none" stroke="#3a625f" stroke-width="1.5">
+<path d="M855 88H984V156M850 254H984V208M1040 182H1125V84M1040 182H1134V278M793 171H930"/>
+<circle cx="984" cy="182" r="88" stroke-dasharray="3 9" opacity=".5"/>
+</g>
+<g font-family="monospace" font-size="12" text-anchor="middle">
+<rect x="930" y="148" width="110" height="68" rx="14" fill="#15322f" stroke="#65e0c1"/>
+<text x="985" y="179" fill="#b1f5e2" font-size="18" font-weight="700">MW</text><text x="985" y="199" fill="#76ac9f" font-size="10" letter-spacing="2">SYSTEMS</text>
+<rect x="784" y="65" width="120" height="42" rx="9" fill="#142438" stroke="#33445b"/><text x="844" y="91" fill="#bdd0e7">AGENTS</text>
+<rect x="768" y="234" width="130" height="42" rx="9" fill="#142438" stroke="#33445b"/><text x="833" y="260" fill="#bdd0e7">INFERENCE</text>
+<rect x="1065" y="53" width="110" height="42" rx="9" fill="#142438" stroke="#33445b"/><text x="1120" y="79" fill="#bdd0e7">EVALS</text>
+<rect x="1050" y="257" width="126" height="42" rx="9" fill="#142438" stroke="#33445b"/><text x="1113" y="283" fill="#bdd0e7">RELIABILITY</text>
+</g>
+<circle cx="793" cy="171" r="5" fill="#63e2c0"/>
+</svg>

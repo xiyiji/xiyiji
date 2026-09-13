@@ -1,12 +1,88 @@
-## Hi, I'm Mengyun 👋
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-banner-mobile.svg" />
+    <img src="assets/profile-banner.svg" width="100%" alt="Mengyun Wang — AI systems. Built end to end. Agent runtimes, LLM infrastructure, evaluation." />
+  </picture>
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/mengyunwang"><img src="assets/linkedin.svg" height="36" alt="LinkedIn" /></a>
+  <a href="https://xiyiji.github.io/"><img src="assets/portfolio.svg" height="36" alt="Portfolio" /></a>
+  <a href="https://xiyiji.github.io/blogs/"><img src="assets/writing.svg" height="36" alt="Writing" /></a>
+  <a href="mailto:mengyun_wang_ai@outlook.com"><img src="assets/email.svg" height="36" alt="Email" /></a>
+</p>
+
+<p align="center"><a href="#-selected-work">Selected work</a> · <a href="#-toolkit">Toolkit</a> · <a href="#-writing--current-focus">Writing &amp; current focus</a></p>
+
+### 👋 A little about me
 
 I'm a Software Engineer at Meta, based in Seattle, WA — I build **infrastructure for large-scale AI systems and LLM agents**: distributed data systems, agent runtimes and harnesses, retrieval, sandboxed execution, and evaluation harnesses.
 
 The through-line is reliability under real load: an agent is only useful once you can show what it did, prove the answer came from the authoritative source, and catch the run where it goes wrong.
 
-📍 Seattle  |  💼 [LinkedIn](https://www.linkedin.com/in/mengyunwang)  |  🌐 [xiyiji.github.io](https://xiyiji.github.io/)  |  📫 mengyun_wang_ai@outlook.com
+<br>
 
----
+### 🚀 Selected work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>🤝 Atlas</h3>
+<p><sub>MULTI-AGENT EXECUTION</sub></p>
+<p>Five specialist agents, human approval gates, durable task state, distributed workers, and Docker-isolated tools.</p>
+<p><strong>52 tests · Full-stack CI</strong></p>
+<p><code>FastAPI</code> <code>PostgreSQL</code> <code>Redis</code> <code>Celery</code></p>
+<p><a href="https://github.com/xiyiji/atlas-llm-execution-agent">Explore repository ↗</a> · <a href="https://xiyiji.github.io/projects/atlas-demo.html">Mission control</a></p>
+</td>
+<td width="50%" valign="top">
+<h3>🧵 Loomwork</h3>
+<p><sub>DURABLE AGENT RUNTIME</sub></p>
+<p>Crash recovery, context compaction, hybrid retrieval with reranking, and an isolated execution environment.</p>
+<p><strong>104 tests · 67 retrieval evaluation questions</strong></p>
+<p><code>Python</code> <code>SQLite</code> <code>ONNX Runtime</code> <code>Next.js</code></p>
+<p><a href="https://github.com/xiyiji/loomwork">Explore repository ↗</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3>🔁 mini-harness</h3>
+<p><sub>CODING-AGENT HARNESS</sub></p>
+<p>Typed tools, read-before-write gating, sandboxed execution, subagents, and resumable benchmark runs.</p>
+<p><strong>24 / 25 exercises solved · Polyglot benchmark subset</strong></p>
+<p><code>Python</code> <code>Pydantic</code> <code>Docker</code> <code>Textual</code></p>
+<p><a href="https://github.com/xiyiji/mini-harness">Explore repository ↗</a></p>
+</td>
+<td width="50%" valign="top">
+<h3>⚙️ LLM Serving Platform</h3>
+<p><sub>INFERENCE INFRASTRUCTURE</sub></p>
+<p>OpenAI-compatible streaming, latency-aware routing, micro-batching, warm pools, and canary releases.</p>
+<p><strong>Canary auto-rollback · Next.js operations console</strong></p>
+<p><code>FastAPI</code> <code>Next.js</code> <code>Prometheus</code> <code>Docker</code></p>
+<p><a href="https://github.com/xiyiji/llm-serving-platform">Explore repository ↗</a> · <a href="https://llm-serving-platform.vercel.app">Live console</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3>🤖 Delivery Exception Agent</h3>
+<p><sub>AGENTIC OPERATIONS</sub></p>
+<p>Retrieves operational playbooks with page-level citations, diagnoses shipment exceptions, and routes human approvals.</p>
+<p><strong>10 / 10 evaluated exceptions · 8 / 8 escalations</strong></p>
+<p><code>LangGraph</code> <code>LangSmith</code> <code>Chroma</code> <code>OpenAI API</code></p>
+<p><a href="https://github.com/xiyiji/delivery-exception-agent">Explore repository ↗</a></p>
+</td>
+<td width="50%" valign="top">
+<h3>🧪 LLM Gateway</h3>
+<p><sub>MODEL ROUTING &amp; EVALUATION</sub></p>
+<p>Four routing policies behind one interface, from rules to PPO, evaluated on quality, cost, and latency.</p>
+<p><strong>46-task benchmark · Three verification regimes</strong></p>
+<p><code>Python</code> <code>FastAPI</code> <code>PyTorch</code> <code>SQLite</code></p>
+<p><a href="https://github.com/xiyiji/llm-gateway">Explore repository ↗</a></p>
+</td>
+</tr>
+</table>
+
+<details>
+<summary><strong>Explore my engineering focus</strong></summary>
 
 ### What I build
 
@@ -19,7 +95,10 @@ The through-line is reliability under real load: an agent is only useful once yo
 - 🚀 **Deployable ML services** — FastAPI · Docker · CI, with leakage-safe features and cost-aware model selection (Cognitive Shorts)
 - 📚 **Interview-prep tooling** — a daily-updated question bank for ML engineers with reference answers and built-in AI walkthroughs (MLE Prep)
 
----
+</details>
+
+<details>
+<summary><strong>All projects · Benchmarks, implementation details &amp; full technology stacks</strong></summary>
 
 ### Featured projects
 
@@ -37,7 +116,36 @@ The through-line is reliability under real load: an agent is only useful once yo
 
 How each of these was built, and what broke along the way: xiyiji.github.io/blogs.
 
----
+</details>
+
+<br>
+
+### 🛠 Toolkit
+
+<p><sub>LANGUAGES &amp; ML</sub></p>
+<p>
+  <img src="https://img.shields.io/badge/Python-142438?style=flat-square&amp;logo=python&amp;logoColor=68e3c4" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-142438?style=flat-square&amp;logo=typescript&amp;logoColor=86b6ff" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/PyTorch-142438?style=flat-square&amp;logo=pytorch&amp;logoColor=f0bd83" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/scikit--learn-142438?style=flat-square&amp;logo=scikitlearn&amp;logoColor=f0bd83" alt="scikit-learn" />
+</p>
+<p><sub>AGENTS &amp; BACKEND</sub></p>
+<p>
+  <img src="https://img.shields.io/badge/LangGraph-142438?style=flat-square&amp;logo=langgraph&amp;logoColor=68e3c4" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/FastAPI-142438?style=flat-square&amp;logo=fastapi&amp;logoColor=68e3c4" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/PostgreSQL-142438?style=flat-square&amp;logo=postgresql&amp;logoColor=86b6ff" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Redis-142438?style=flat-square&amp;logo=redis&amp;logoColor=f0bd83" alt="Redis" />
+</p>
+<p><sub>INFRASTRUCTURE &amp; OBSERVABILITY</sub></p>
+<p>
+  <img src="https://img.shields.io/badge/Docker-142438?style=flat-square&amp;logo=docker&amp;logoColor=86b6ff" alt="Docker" />
+  <img src="https://img.shields.io/badge/Kubernetes-142438?style=flat-square&amp;logo=kubernetes&amp;logoColor=86b6ff" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/Prometheus-142438?style=flat-square&amp;logo=prometheus&amp;logoColor=f0bd83" alt="Prometheus" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-142438?style=flat-square&amp;logo=githubactions&amp;logoColor=c1a4fb" alt="GitHub Actions" />
+</p>
+
+<details>
+<summary><strong>Full toolkit by discipline</strong></summary>
 
 ### Tech stack
 
@@ -59,9 +167,12 @@ How each of these was built, and what broke along the way: xiyiji.github.io/blog
 **Web**
 `TypeScript` `Next.js` `Textual` `Vercel` `GitHub Pages`
 
----
+</details>
 
-### Writing
+<br>
+
+### ✍️ Writing & current focus
+
 
 I write about what I actually build.
  
@@ -69,7 +180,10 @@ I write about what I actually build.
 
 ---
 
-### Currently
+**Currently**
 
 - 🔨 Building: [MLE Prep](https://mle-prep-pi.vercel.app/) — new questions and reference answers added daily
 - 📖 Writing: daily notes on AI engineering and evaluation
+
+<br>
+<p align="center"><sub>Agent systems · Inference infrastructure · Evaluation</sub></p>
