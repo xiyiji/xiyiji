@@ -171,7 +171,7 @@ How each of these was built, and what broke along the way: xiyiji.github.io/blog
 
 <br>
 
-### ✍️ Writing & current focus
+### ✍ Writing & current focus
 
 
 I write about what I actually build.
