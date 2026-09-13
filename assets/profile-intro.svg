@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="86" viewBox="0 0 680 86" role="img" aria-labelledby="title">
+  <title id="title">Hi, I'm Mengyun Wang.</title>
+  <defs><linearGradient id="blue" x1="0" x2="1"><stop stop-color="#0078D7"/><stop offset="1" stop-color="#7762DD"/></linearGradient></defs>
+  <text x="340" y="57" text-anchor="middle" fill="url(#blue)" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, monospace" font-size="36" font-weight="700" letter-spacing="-1.2">Hi, I'm Mengyun Wang.</text>
+</svg>

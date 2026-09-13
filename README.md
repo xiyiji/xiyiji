@@ -1,18 +1,19 @@
 <p align="center">
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/profile-banner-mobile.svg" />
-    <img src="assets/profile-banner.svg" width="100%" alt="Mengyun Wang — AI systems. Built end to end. Agent runtimes, LLM infrastructure, evaluation." />
-  </picture>
+  <img src="assets/profile-intro.svg" width="680" alt="Hi, I'm Mengyun Wang." />
 </p>
+
+<p align="center"><strong>AI Systems Engineer · Agentic Infrastructure · LLM Evaluation</strong></p>
+
+<p align="center"><code>∞ Software Engineer @ Meta</code> &nbsp; <code>📍 Seattle, WA</code></p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/mengyunwang"><img src="assets/linkedin.svg" height="36" alt="LinkedIn" /></a>
-  <a href="https://xiyiji.github.io/"><img src="assets/portfolio.svg" height="36" alt="Portfolio" /></a>
-  <a href="https://xiyiji.github.io/blogs/"><img src="assets/writing.svg" height="36" alt="Writing" /></a>
-  <a href="mailto:mengyun_wang_ai@outlook.com"><img src="assets/email.svg" height="36" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/mengyunwang"><img src="assets/contact-linkedin.svg" height="28" alt="LinkedIn" /></a>
+  <a href="https://xiyiji.github.io/"><img src="assets/contact-portfolio.svg" height="28" alt="Portfolio" /></a>
+  <a href="https://xiyiji.github.io/blogs/"><img src="assets/contact-writing.svg" height="28" alt="Writing" /></a>
+  <a href="mailto:mengyun_wang_ai@outlook.com"><img src="assets/contact-email.svg" height="28" alt="Email" /></a>
 </p>
 
-<p align="center"><a href="#-selected-work">Selected work</a> · <a href="#-toolkit">Toolkit</a> · <a href="#-writing--current-focus">Writing &amp; current focus</a></p>
+<br>
 
 ### 👋 A little about me
 
